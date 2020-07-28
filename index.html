@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+</head>
+
+<body>
+
+  <div class="header">
+    <ul class="appName">
+      <li><a>YourApp</a></li>
+    </ul>
+    <ul class="profileName">
+      <li><a>bell</a></li>
+      <li><a><img src="">Josh Sullivan</a></li>
+    </ul>
+  </div>
+
+<div class="nav-container">
+  <ul class="nav-items">
+    <li><a href="#"><img class="icon-svg" src="icons/icon-dashboard.svg" alt="Dashboard"></a></li>
+    <li><a href="#"><img class="icon-svg" src="icons/icon-members.svg" alt="Member"></a></li>
+    <li><a href="#"><img class="icon-svg" src="icons/icon-visits.svg" alt="Visit"></a></li>
+    <li><a href="#"><img class="icon-svg" src="icons/icon-settings.svg" alt="Setting"></a></li>
+  </ul>
+</div>
+
+<main class="dashboard">
+
+  <div class="dashboard-container">
+    <h2 class="main-title">Dashboard</h2>
+    <input />
+  </div>
+
+  <div class="notif-container">
+    <span class= notif-text><p>Alert Nilliam kdjfla dkhui dihfio skj tkejl sidjm alja idjijkl kldjflj.</p></span>
+  </div>
+
+  <div class="traffic">
+    <canvas id="myChart" width="250" height="250"></canvas>
+  </div>
+  <div class="daily-traffic">
+    <canvas id="myChart" width="250" height="250"></canvas>
+  </div>
+  <div class="mobile-users">
+  </div>
+  <div class="social-stats"></div>
+<div class="new-members">
+  <h3>New Members</h3>
+
+  <div class="members-container">
+
+    <div class="member-1">
+    <img src="images/member-1.jpg" alt="member-1">
+      <div class="members-text">
+        <p>Victoria Chambers</p>
+        <a href="#">victoria.chambers80@example.com</a>
+      </div>
+    <p class="date">12/03/19</p>
+    </div>
+
+    <div class="member-2">
+    <img src="images/member-2.jpg" alt="member-2">
+      <div class="members-text">
+        <p>dale Byrd</p>
+        <a href="#">dale.byrd52@example.com</a>
+      </div>
+    <p class="date">12/03/19</p>
+    </div>
+
+    <div class="member-3">
+    <img src="images/member-3.jpg" alt="member-3">
+      <div class="members-text">
+        <p>Dawn Wood</p>
+        <a href="#">dawn.wood16@example.com</a>
+      </div>
+    <p class="date">12/03/19</p>
+    </div>
+
+    <div class="member-4">
+    <img src="images/member-4.jpg" alt="member-4">
+      <div class="members-text">
+        <p>Dan Oliver</p>
+        <a href="#">dan.oliver82@example.com</a>
+      </div>
+    <p class="date">12/03/19</p>
+    </div>
+
+  </div>
+</div>
+
+  <div class="recent-activities">
+    <h3>Recent Activity</h3>
+
+  <div class="recent-container">
+    <div class="active-1">
+      <img src="images/member-1.jpg" alt="member-1">
+
+      <div class="members-text">
+        <p>Victoria Chambers commented on YourApp's SEO Tips</p>
+        <p>2 hours ago</p>
+      </div>
+      <span>&gt</span>
+    </div>
+
+    <div class="active-2">
+      <img src="images/member-2.jpg" alt="member-2">
+      <div class="members-text">
+        <p>Dale Byrd likes the Facebook Changes for 2019</p>
+        <p>6 hours ago</p>
+      </div>
+      <span>&gt</span>
+    </div>
+
+    <div class="active-3">
+      <img src="images/member-3.jpg" alt="member-3">
+      <div class="members-text">
+        <p>Dawn Wood commented on Facebook Changes for 2019</p>
+        <p>8 hours ago</p>
+      </div>
+      <span>&gt</span>
+    </div>
+
+    <div class="active-4">
+      <img src="images/member-4.jpg" alt="member-4">
+      <div class="members-text">
+        <p>Dan Oliver posted YourApp's SEO Tips</p>
+        <p>1 Day ago</p>
+      </div>
+      <span>&gt</span>
+    </div>
+  </div>
+
+  <div class="message-user">
+    <h3>Message User</h3>
+
+    <form class="message-c">
+      <input type="text" placeholder="search for user" class="form-field" id="userField">
+      <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
+      <button class="button-primary" id="send">Send</button>
+    </form>
+  </div>
+
+  <div class="settings">
+    <button class="button-primary" id="save">Save</button>
+    <button class="button-disabled" id="cancel">Cancel</button>
+  </div>
+</main>
+
+
+
+
+
+<script src="path/to/chartjs/dist/Chart.js"></script>
+
+<script>
+  var ctx = document.getElementById('myChart');
+  var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+          label: '# of Votes',
+          data: [12, 19, 3, 5, 2, 3],
+          backgroundColor: [
+              'rgba(255, 99, 132, 0.2)',
+              'rgba(54, 162, 235, 0.2)',
+              'rgba(255, 206, 86, 0.2)',
+              'rgba(75, 192, 192, 0.2)',
+              'rgba(153, 102, 255, 0.2)',
+              'rgba(255, 159, 64, 0.2)'
+          ],
+          borderColor: [
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 159, 64, 1)'
+          ],
+          borderWidth: 1
+      }]
+  },
+  options: {
+      scales: {
+          yAxes: [{
+              ticks: {
+                  beginAtZero: true
+              }
+          }]
+      }
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  background:#a9a0e8;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.appName {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.appName li a {
+  padding-left: 20px;
+  color: white;
+}
+.profileName {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  font-size: 14px;
+  color: white;
+}
+.profileName li a {
+  padding-right: 20px;
+}
+.nav-container {
+  display: flex;
+  height: 55px;
+  align-items: center;
+  background:#363676;
+}
+.nav-items {
+  display: flex;
+  flex-direction: row;
+}
+.nav-items li {
+  padding-left: 20px;
+}
+.icon-svg {
+  display: grid;
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+}
+.main-title {
+  align-items: center;
+  margin-top: 10px;
+}
+.dashboard {
+  display: grid;
+}
