@@ -12,164 +12,76 @@
 </head>
 
 <body>
-<!-- TOP BAR WITH TITLE, PROFILE ICON WITH NOTIFICATION BELL -->
-  <div class="header">
-    <ul class="appName">
-      <li><a>YourApp</a></li>
-    </ul>
-    <ul class="profileName">
-      <li><a href="#"><img class="bell-icon" src="icons/icon-bell.svg" alt="bell"></a></li>
-      <li><a href="#"><img class="profile-icon" src="images/member-1.jpg" alt="profilepic"></a></li>
-      <li><a><img src="">Josh Sullivan</a></li>
-    </ul>
+<div class="body-container">
+<div class="header-container">
+  <div>
+    <h1><span class="your-logo">Your</span>App<span class=tm-logo>TM</span></h1>
   </div>
-<!-- SIDE NAVIGATION -->
-<div class="nav-container">
-  <ul class="nav-items">
-    <li><a href="#"><img class="icon-svg" src="icons/icon-dashboard.svg" alt="Dashboard"></a></li>
-    <li><a href="#"><img class="icon-svg" src="icons/icon-members.svg" alt="Member"></a></li>
-    <li><a href="#"><img class="icon-svg" src="icons/icon-visits.svg" alt="Visit"></a></li>
-    <li><a href="#"><img class="icon-svg" src="icons/icon-settings.svg" alt="Setting"></a></li>
-  </ul>
+  <div class="push">
+    <a href="#"><img class="bell-icon" src="icons/icon-bell.svg" alt="bell"></a>
+  </div>
+  <div>
+    <a href="#"><img class="profile-icon" src="images/member-1.jpg" alt="profilepic"></a>
+  </div>
+  <div>
+    <a href="#"><p class="name">Josh Sullivan</p></a>
+  </div>
+
+
 </div>
 
-<main class="dashboard-grid">
-<!-- DASHBOARD AND SEARCHBAR -->
-  <div class="dashboard-container">
-    <h2 class="main-title">Dashboard</h2>
-    <div class="searchBar">
-      <input />
-    </div>
-  </div>
+<div class="nav-container">
 
-  <div class="notif-container">
-    <span class= notif-text><p>Alert Nilliam kdjfla dkhui dihfio skj tkejl sidjm alja idjijkl kldjflj.</p></span>
-  </div>
-<!-- CHARTS AND GRAPHS -->
-  <div class="traffic">
-    <canvas id="myChart" ></canvas>
-  </div>
-  <div class="daily-traffic">
-    <canvas id="myChart" ></canvas>
-  </div>
-  <div class="mobile-users">
-    <canvas id="myChart" ></canvas>
-  </div>
-  <!-- SOCIAL STATS -->
-  <div class="social-wrapper">
+  <a href="#"><img class="icon-svg" src="icons/icon-dashboard.svg" alt="Dashboard"></a>
+  <a href="#"><img class="icon-svg" src="icons/icon-members.svg" alt="Member"></a>
+  <a href="#"><img class="icon-svg" src="icons/icon-visits.svg" alt="Visit"></a>
+  <a href="#"><img class="icon-svg" src="icons/icon-settings.svg" alt="Setting"></a>
 
-  </div>
+</div>
 
-<div class="new-members">
-  <h3>New Members</h3>
+<div class="dashtab-container">
+  <h2 class="dashboard-title">Dashboard</h2>
+</div>
+
+<div class="searchbar-container">
+
+  <input />
+
+</div>
+
+<div class="dashboard-container">
+
+  <canvas id="lineChart"  ></canvas>
+  <canvas id="barChart"  ></canvas>
+  <canvas id="circleChart"  ></canvas>
+
+  <div class="social-container">
+    <h3>SOCIAL STATS</h3>
+  </div>
 
   <div class="members-container">
-
-    <div class="member-1">
-    <img src="images/member-1.jpg" alt="member-1">
-      <div class="members-text">
-        <p>Victoria Chambers</p>
-        <a href="#">victoria.chambers80@example.com</a>
-      </div>
-    <p class="date">12/03/19</p>
-    </div>
-
-    <div class="member-2">
-    <img src="images/member-2.jpg" alt="member-2">
-      <div class="members-text">
-        <p>dale Byrd</p>
-        <a href="#">dale.byrd52@example.com</a>
-      </div>
-    <p class="date">12/03/19</p>
-    </div>
-
-    <div class="member-3">
-    <img src="images/member-3.jpg" alt="member-3">
-      <div class="members-text">
-        <p>Dawn Wood</p>
-        <a href="#">dawn.wood16@example.com</a>
-      </div>
-    <p class="date">12/03/19</p>
-    </div>
-
-    <div class="member-4">
-    <img src="images/member-4.jpg" alt="member-4">
-      <div class="members-text">
-        <p>Dan Oliver</p>
-        <a href="#">dan.oliver82@example.com</a>
-      </div>
-    <p class="date">12/03/19</p>
-    </div>
-
+    <h3>NEW MEMBERS</h3>
   </div>
+
+  <div class="activities-container">
+    <h3>RECENT ACTIVITY</h3>
+  </div>
+
+  <div class="messages-container">
+    <h3>MESSAGE USER</h3>
+  </div>
+
+  <div class="settings-container">
+    <h3>SETTINGS</h3>
+  </div>
+
+
 </div>
-
-  <div class="recent-activities">
-    <h3>Recent Activity</h3>
-
-  <div class="recent-container">
-    <div class="active-1">
-      <img src="images/member-1.jpg" alt="member-1">
-
-      <div class="members-text">
-        <p>Victoria Chambers commented on YourApp's SEO Tips</p>
-        <p>2 hours ago</p>
-      </div>
-      <span>&gt</span>
-    </div>
-
-    <div class="active-2">
-      <img src="images/member-2.jpg" alt="member-2">
-      <div class="members-text">
-        <p>Dale Byrd likes the Facebook Changes for 2019</p>
-        <p>6 hours ago</p>
-      </div>
-      <span>&gt</span>
-    </div>
-
-    <div class="active-3">
-      <img src="images/member-3.jpg" alt="member-3">
-      <div class="members-text">
-        <p>Dawn Wood commented on Facebook Changes for 2019</p>
-        <p>8 hours ago</p>
-      </div>
-      <span>&gt</span>
-    </div>
-
-    <div class="active-4">
-      <img src="images/member-4.jpg" alt="member-4">
-      <div class="members-text">
-        <p>Dan Oliver posted YourApp's SEO Tips</p>
-        <p>1 Day ago</p>
-      </div>
-      <span>&gt</span>
-    </div>
-  </div>
-
-  <div class="message-user">
-    <h3>Message User</h3>
-
-    <form class="message-c">
-      <input type="text" placeholder="search for user" class="form-field" id="userField">
-      <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
-      <button class="button-primary" id="send">Send</button>
-    </form>
-  </div>
-
-  <div class="settings">
-    <button class="button-primary" id="save">Save</button>
-    <button class="button-disabled" id="cancel">Cancel</button>
-  </div>
-</main>
-
-
-
-
-
-<script src="path/to/chartjs/dist/Chart.js"></script>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
 <script>
-  var ctx = document.getElementById('myChart');
-  var myChart = new Chart(ctx, {
+  var ctx = document.getElementById('barChart');
+  var barChart = new Chart(ctx, {
   type: 'bar',
   data: {
       labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
@@ -208,3 +120,199 @@
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TOP BAR WITH TITLE, PROFILE ICON WITH NOTIFICATION BELL -->
+  <!-- <div class="header">
+    <ul class="appName">
+      <li><a>YourApp</a></li>
+    </ul>
+    <ul class="profileName">
+      <li><a href="#"><img class="bell-icon" src="icons/icon-bell.svg" alt="bell"></a></li>
+      <li><a href="#"><img class="profile-icon" src="images/member-1.jpg" alt="profilepic"></a></li>
+      <li><a><img src="">Josh Sullivan</a></li>
+    </ul>
+  </div> -->
+<!-- SIDE NAVIGATION -->
+<!-- <div class="nav-container">
+  <ul class="nav-items">
+    <li><a href="#"><img class="icon-svg" src="icons/icon-dashboard.svg" alt="Dashboard"></a></li>
+    <li><a href="#"><img class="icon-svg" src="icons/icon-members.svg" alt="Member"></a></li>
+    <li><a href="#"><img class="icon-svg" src="icons/icon-visits.svg" alt="Visit"></a></li>
+    <li><a href="#"><img class="icon-svg" src="icons/icon-settings.svg" alt="Setting"></a></li>
+  </ul>
+</div>
+
+<main class="dashboard-grid"> -->
+<!-- DASHBOARD AND SEARCHBAR -->
+  <!-- <div class="dashboard-container">
+    <h2 class="main-title">Dashboard</h2>
+    <div class="searchBar">
+      <input />
+    </div>
+  </div>
+
+  <div class="notif-container">
+    <span class= notif-text><p>Alert Nilliam kdjfla dkhui dihfio skj tkejl sidjm alja idjijkl kldjflj.</p></span>
+  </div> -->
+<!-- MAIN TRAFFIC WRAPPER -->
+  <!-- <div class="traffic">
+    <canvas id="myChart" width: "300px" ></canvas>
+  </div> -->
+
+<!-- OTHER GRAPHS WRAPPER -->
+  <!-- <section class="graphs-container">
+    <div class="daily-traffic">
+      <canvas id="myChart" ></canvas>
+    </div>
+    <div class="mobile-users">
+      <canvas id="myChart" ></canvas>
+    </div>
+  </section> -->
+
+
+
+  <!-- SOCIAL STATS WRAPPER-->
+  <!-- <section class="social-container">
+    <div class="social-wrapper">
+
+    </div>
+  </section> -->
+
+  <!-- NEW MEMEBERS AND RECENT ACTIVITIES WRAPPER -->
+<!-- <section>
+  <div class="new-members">
+    <h3>New Members</h3>
+
+    <div class="members-container">
+
+      <div class="member-1">
+      <img src="images/member-1.jpg" alt="member-1">
+        <div class="members-text">
+          <p>Victoria Chambers</p>
+          <a href="#">victoria.chambers80@example.com</a>
+        </div>
+      <p class="date">12/03/19</p>
+      </div>
+
+      <div class="member-2">
+      <img src="images/member-2.jpg" alt="member-2">
+        <div class="members-text">
+          <p>dale Byrd</p>
+          <a href="#">dale.byrd52@example.com</a>
+        </div>
+      <p class="date">12/03/19</p>
+      </div>
+
+      <div class="member-3">
+      <img src="images/member-3.jpg" alt="member-3">
+        <div class="members-text">
+          <p>Dawn Wood</p>
+          <a href="#">dawn.wood16@example.com</a>
+        </div>
+      <p class="date">12/03/19</p>
+      </div>
+
+      <div class="member-4">
+      <img src="images/member-4.jpg" alt="member-4">
+        <div class="members-text">
+          <p>Dan Oliver</p>
+          <a href="#">dan.oliver82@example.com</a>
+        </div>
+      <p class="date">12/03/19</p>
+      </div>
+
+    </div>
+  </div>
+
+    <div class="recent-activities">
+      <h3>Recent Activity</h3>
+
+    <div class="recent-container">
+      <div class="active-1">
+        <img src="images/member-1.jpg" alt="member-1">
+
+        <div class="members-text">
+          <p>Victoria Chambers commented on YourApp's SEO Tips</p>
+          <p>2 hours ago</p>
+        </div>
+        <span>&gt</span>
+      </div>
+
+      <div class="active-2">
+        <img src="images/member-2.jpg" alt="member-2">
+        <div class="members-text">
+          <p>Dale Byrd likes the Facebook Changes for 2019</p>
+          <p>6 hours ago</p>
+        </div>
+        <span>&gt</span>
+      </div>
+
+      <div class="active-3">
+        <img src="images/member-3.jpg" alt="member-3">
+        <div class="members-text">
+          <p>Dawn Wood commented on Facebook Changes for 2019</p>
+          <p>8 hours ago</p>
+        </div>
+        <span>&gt</span>
+      </div>
+
+      <div class="active-4">
+        <img src="images/member-4.jpg" alt="member-4">
+        <div class="members-text">
+          <p>Dan Oliver posted YourApp's SEO Tips</p>
+          <p>1 Day ago</p>
+        </div>
+        <span>&gt</span>
+      </div>
+    </div>
+</section> -->
+
+<!-- MESSAGE AND SETTINGS-->
+<!-- <section>
+  <div class="message-user">
+    <h3>Message User</h3>
+
+    <form class="message-c">
+      <input type="text" placeholder="search for user" class="form-field" id="userField">
+      <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
+      <button class="button-primary" id="send">Send</button>
+    </form>
+  </div>
+
+  <div class="settings">
+    <button class="button-primary" id="save">Save</button>
+    <button class="button-disabled" id="cancel">Cancel</button>
+  </div>
+</section> -->
+
+<!-- </main> -->
