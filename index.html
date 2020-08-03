@@ -1,411 +1,275 @@
-<!DOCTYPE HTML>
-<html lang="eng">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
-  <link rel="stylesheet" href="css/style.css">
-
+    <meta charset="utf-8">
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css" />
+    <link href="css/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>Web App Dashboard</title>
 </head>
 
 <body>
-<div class="body-container">
-<div class="header-container">
-  <div>
-    <h1><span class="your-logo">Your</span>App<span class=tm-logo>TM</span></h1>
-  </div>
-  <div class="push">
-    <a href="#"><img class="bell-icon" src="icons/icon-bell.svg" alt="bell"></a>
-  </div>
-  <div>
-    <a href="#"><img class="profile-icon" src="images/member-1.jpg" alt="profilepic"></a>
-  </div>
-  <div>
-    <a href="#"><p class="name">Josh Sullivan</p></a>
-  </div>
-
-
-</div>
-
-<div class="nav-container">
-
-  <a href="#"><img class="icon-svg" src="icons/icon-dashboard.svg" alt="Dashboard"></a>
-  <a href="#"><img class="icon-svg" src="icons/icon-members.svg" alt="Member"></a>
-  <a href="#"><img class="icon-svg" src="icons/icon-visits.svg" alt="Visit"></a>
-  <a href="#"><img class="icon-svg" src="icons/icon-settings.svg" alt="Setting"></a>
-
-</div>
-
-<div class="dashtab-container">
-  <div class="dashboard-title-container">
-
-    <h2 class="dashboard-title">Dashboard</h2>
-
-  </div>
-
-  <div class="searchbar-container">
-
-    <input class="search-input" >
-
-  </div>
-</div>
-
-<div class="dashboard-container">
-
-  <div class="graph-container">
-    <canvas class="lineChart" id="lineChart"  ></canvas>
-    <canvas id="barChart"  ></canvas>
-    <canvas id="circleChart"  ></canvas>
-  </div>
-
-  <div class="social-container">
-    <h3>SOCIAL STATS</h3>
-    <div class="social-stats-container">
-      <div class="image">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
-        <path fill="white" d="M32,3.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.8,0.8,24,0,22.2,0
-        	c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5C10.3,7.8,5.5,5.2,2.2,1.2c-0.6,1-0.9,2.1-0.9,3.3c0,2.3,1.2,4.3,2.9,5.5
-        	c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1
-        	c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,3,10.1,3c12.1,0,18.7-10,18.7-18.7
-        	c0-0.3,0-0.6,0-0.8C30,5.6,31.1,4.4,32,3.1z"/>
-        </svg>
-      </div>
-      <div class="topbottom">
-        <p id="twitter-title">
-          Twitter
-        </p>
-        <p id="twitter-count">
-          10,345
-        </p>
-      </div>
-    </div>
-    <div class="social-stats-container">
-      <div class="image">
-        <img alt="facebook" src="icons/icon-facebook.svg" />
-      </div>
-      <div class="topbottom">
-        <p id="facebook-title">
-          Facebook
-        </p>
-        <p id="facebook-count">
-          8,739
-        </p>
-      </div>
-    </div>
-    <div class="social-stats-container">
-      <div class="image">
-        <img alt="google" src="icons/icon-google-plus.svg" />
-      </div>
-      <div class="topbottom">
-        <p id="google-title">
-          Google+
-        </p>
-        <p id="google-count">
-          2,530
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="members-container">
-                <h3 class="member-heading">NEW MEMBERS</h3>
-                <!-- Member Entry -->
-
-                <div class="member-data">
-                    <div class="member-icon"><img alt="Victoria Chambers" class="icon" src="images/member-1.jpg">
-                    </div>
-
-                    <div class="contact-info">
-                        <span class="top-info">Victoria Chambers</span> <span class="bottom-info">victoria@example.com</span>
-                    </div>
-
-                    <div class="join-date">
-                        <span>10/15/15</span>
-                    </div>
+    <div id="container">
+        <header>
+            <h1><span>Your</span>App&trade;</h1>
+            <div class="header-identification">
+                <div class="header-notification">
+                    <img src="icons/icon-bell.svg" alt="Alert Bell Icon" />
+                    <p class="notification"></p>
                 </div>
-                <!-- Member Entry -->
-
-                <div class="member-data">
-                    <div class="member-icon"><img alt="Dale Byrd" class="icon" src="images/member-2.jpg">
-                    </div>
-
-                    <div class="contact-info">
-                        <span class="top-info">Dale Byrd</span> <span class="bottom-info">dale.byrd52@example.com</span>
-                    </div>
-
-                    <div class="join-date">
-                        <span>10/15/15</span>
-                    </div>
+                <div class="header-divider">
+                    <p class="divider"></p>
                 </div>
-                <!-- Member Entry -->
-
-                <div class="member-data">
-                    <div class="member-icon"><img alt="Dawn Wood" class="icon" src="images/member-3.jpg">
-                    </div>
-
-                    <div class="contact-info">
-                        <span class="top-info">Dawn Wood</span> <span class="bottom-info">dawn.wood16@example.com</span>
-                    </div>
-
-                    <div class="join-date">
-                        <span>10/15/15</span>
+                <div class="header-profile">
+                    <img src="https://randomuser.me/api/portraits/men/81.jpg" alt="Member photo" />
+                    <p>John Sullivan</p>
+                </div>
+            </div>
+        </header>
+        <div id="dashboard">
+            <nav>
+                <a href="#dashboard"><img src="icons/icon-dashboard.svg" alt="Dashboard icon" /></a>
+                <a href="#membership"><img src="icons/icon-members.svg" alt="Membership icon" /></a>
+                <a href="#daily-traffic"><img src="icons/icon-visits.svg" alt="Website traffic icon" /></a>
+                <a href="#settings"><img src="icons/icon-settings.svg" alt="Settings icon" /></a>
+            </nav>
+            <main>
+                <div class="dashboard-search">
+                    <h1>Dashboard</h1>
+                    <div class="search-bar">
+                        <input type="search" placeholder="Search">
                     </div>
                 </div>
 
-  <div class="activities-container">
-    <h3>RECENT ACTIVITY</h3>
-  </div>
+                <div id="alert" class="dashboard-alert">
+                    <h2><span>Alert:</span> Site maintenance scheduled for Sunday 1:00 AM - 3:00 AM<span class="close-alert" onclick="this.parentElement.parentElement.style.display='none';">X</span></h2>
+                </div>
 
-  <div class="messages-container">
-    <h3>MESSAGE USER</h3>
-  </div>
+                <div class="traffic-chart">
+                    <h1>Traffic</h1>
+                    <canvas id="traffic"></canvas>
+                </div>
 
-  <div class="settings-container">
-    <h3>SETTINGS</h3>
-  </div>
+                <div class="charts-container">
+                    <div class="daily-traffic-chart">
+                        <h1> Daily Traffic</h1>
+                        <canvas id="daily-traffic"></canvas>
+                    </div>
+                    <div class="mobile-users-chart">
+                        <h1>Mobile Users</h1>
+                        <canvas id="mobile-users"></canvas>
+                    </div>
+                </div>
 
+                <div class="social-media">
+                    <h1>Social Stats</h1>
+                    <div class="social-row">
+                        <div id="twitter" class="social-widget">
 
-</div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
-<script>
-  var ctx = document.getElementById('barChart');
-  var barChart = new Chart(ctx, {
-  type: 'bar',
-  data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-      datasets: [{
-          label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
-          backgroundColor: [
-              'rgba(255, 99, 132, 0.2)',
-              'rgba(54, 162, 235, 0.2)',
-              'rgba(255, 206, 86, 0.2)',
-              'rgba(75, 192, 192, 0.2)',
-              'rgba(153, 102, 255, 0.2)',
-              'rgba(255, 159, 64, 0.2)'
-          ],
-          borderColor: [
-              'rgba(255, 99, 132, 1)',
-              'rgba(54, 162, 235, 1)',
-              'rgba(255, 206, 86, 1)',
-              'rgba(75, 192, 192, 1)',
-              'rgba(153, 102, 255, 1)',
-              'rgba(255, 159, 64, 1)'
-          ],
-          borderWidth: 1
-      }]
-  },
-  options: {
-      scales: {
-          yAxes: [{
-              ticks: {
-                  beginAtZero: true
-              }
-          }]
-      }
-  }
-});
-</script>
+                          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                          <path fill="white" d="M32,3.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.8,0.8,24,0,22.2,0
+                            c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5C10.3,7.8,5.5,5.2,2.2,1.2c-0.6,1-0.9,2.1-0.9,3.3c0,2.3,1.2,4.3,2.9,5.5
+                            c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1
+                            c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,3,10.1,3c12.1,0,18.7-10,18.7-18.7
+                            c0-0.3,0-0.6,0-0.8C30,5.6,31.1,4.4,32,3.1z"/>
+                          </svg>
+                            <h4>Twitter</h4>
+                            <p>10,345</p>
+                        </div>
+
+                        <div id="facebook" class="social-widget">
+
+                          <svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="white" d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
+                            <h4>Facebook</h4>
+                            <p>8,739</p>
+                        </div>
+
+                        <div id="google" class="social-widget">
+
+                          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                          <path fill="white" d="M17.7,25.7c0-0.3,0-0.5-0.1-0.8c-0.1-0.2-0.1-0.5-0.2-0.7c-0.1-0.2-0.2-0.4-0.3-0.7c-0.2-0.2-0.3-0.4-0.4-0.6
+                            c-0.1-0.2-0.3-0.3-0.5-0.6c-0.2-0.2-0.4-0.4-0.5-0.5c-0.1-0.1-0.3-0.3-0.6-0.5c-0.3-0.2-0.5-0.4-0.6-0.4s-0.3-0.2-0.6-0.4
+                            c-0.3-0.2-0.5-0.4-0.6-0.4c-0.2,0-0.5,0-1,0c-0.7,0-1.4,0-2,0.1c-0.7,0.1-1.4,0.2-2.1,0.5c-0.7,0.2-1.3,0.5-1.9,0.9s-1,0.8-1.3,1.4
+                            c-0.3,0.6-0.5,1.3-0.5,2.1c0,0.9,0.2,1.7,0.7,2.3c0.5,0.7,1.1,1.2,1.8,1.6s1.5,0.7,2.3,0.9s1.6,0.3,2.4,0.3c0.8,0,1.5-0.1,2.2-0.2
+                            c0.7-0.2,1.3-0.4,1.9-0.8c0.6-0.3,1.1-0.8,1.4-1.4C17.5,27.2,17.7,26.5,17.7,25.7z M15.4,9.1c0-0.8-0.1-1.6-0.3-2.5
+                            c-0.2-0.9-0.5-1.7-0.9-2.5c-0.4-0.8-0.9-1.5-1.6-2c-0.7-0.5-1.5-0.8-2.3-0.8c-1.2,0-2.1,0.4-2.8,1.3c-0.7,0.9-1,1.9-1,3.2
+                            c0,0.6,0.1,1.2,0.2,1.9c0.1,0.7,0.4,1.3,0.7,2c0.3,0.7,0.7,1.3,1.1,1.8c0.4,0.5,0.9,1,1.5,1.3c0.6,0.3,1.2,0.5,1.9,0.5
+                            c1.2,0,2.1-0.4,2.7-1.2C15.1,11.4,15.4,10.4,15.4,9.1z M12.9,0h8.4l-2.6,1.5h-2.6c0.9,0.6,1.6,1.4,2.1,2.4s0.8,2.1,0.8,3.2
+                            c0,0.9-0.1,1.8-0.4,2.5c-0.3,0.7-0.7,1.3-1.1,1.8c-0.4,0.4-0.8,0.9-1.3,1.2c-0.4,0.4-0.8,0.8-1.1,1.2c-0.3,0.4-0.4,0.8-0.4,1.3
+                            c0,0.3,0.1,0.7,0.3,1c0.2,0.3,0.5,0.6,0.8,0.9c0.3,0.3,0.7,0.6,1.1,0.9c0.4,0.3,0.8,0.7,1.2,1.1c0.4,0.4,0.8,0.8,1.1,1.3
+                            c0.3,0.5,0.6,1,0.8,1.6c0.2,0.6,0.3,1.3,0.3,2c0,2.1-0.9,3.9-2.7,5.4c-1.9,1.7-4.6,2.5-8.1,2.5c-0.8,0-1.5-0.1-2.3-0.2
+                            c-0.8-0.1-1.6-0.3-2.3-0.6c-0.8-0.3-1.5-0.7-2.1-1.1c-0.6-0.4-1.1-1-1.5-1.7C1,27.6,0.8,26.9,0.8,26c0-0.8,0.2-1.6,0.7-2.6
+                            c0.4-0.8,1-1.5,1.8-2.1c0.8-0.6,1.8-1.1,2.8-1.4c1-0.3,2-0.5,3-0.7c0.9-0.1,1.9-0.2,2.9-0.3c-0.8-1.1-1.2-2-1.2-2.9
+                            c0-0.2,0-0.3,0-0.5c0-0.1,0.1-0.3,0.1-0.4c0-0.1,0.1-0.2,0.2-0.4c0.1-0.2,0.1-0.3,0.1-0.4c-0.5,0.1-1,0.1-1.3,0.1
+                            c-1.9,0-3.5-0.6-4.9-1.9c-1.4-1.3-2-2.8-2-4.7c0-1.8,0.6-3.4,1.8-4.8C6,1.7,7.5,0.8,9.3,0.4C10.5,0.1,11.7,0,12.9,0z M32.8,4.9v2.5
+                            h-4.9v4.9h-2.5V7.4h-4.9V4.9h4.9V0h2.5v4.9H32.8z"/>
+                          </svg>
+                            <h4>Google+</h4>
+                            <p>2,530</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="membership" class="membership-container">
+                    <div class="members-widget">
+                        <h1>New Members</h1>
+                        <div class="member">
+                          <div class="member-profile">
+                           <img src="https://randomuser.me/api/portraits/women/64.jpg" alt="Member photo">
+                            <div class="member-info">
+                                <p>Victoria Chambers</p>
+                                <p class="member-email">vchambers@example.com</p>
+                            </div>
+                          </div>
+                            <p class="join-date">10/15/15</p>
+                        </div>
+                        <div class="member">
+                          <div class="member-profile">
+                           <img src="https://randomuser.me/api/portraits/men/21.jpg" alt="Member photo">
+                            <div class="member-info">
+                                <p>Dale Byrd</p>
+                                <p class="member-email">dale.byrd@example.com</p>
+                            </div>
+                          </div>
+                            <p class="join-date">10/14/15</p>
+                        </div>
+                        <div class="member">
+                          <div class="member-profile">
+                           <img src="https://randomuser.me/api/portraits/women/81.jpg" alt="Member photo">
+                            <div class="member-info">
+                                <p>Dawn Wood</p>
+                                <p class="member-email">dawn.wood@example.com</p>
+                            </div>
+                          </div>
+                            <p class="join-date">10/14/15</p>
+                        </div>
+                        <div class="member">
+                          <div class="member-profile">
+                           <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Member photo">
+                            <div class="member-info">
+                                <p>Dan Oliver</p>
+                                <p class="member-email">dan.oliver@example.com</p>
+                            </div>
+                          </div>
+                            <p class="join-date">10/13/15</p>
+                        </div>
+                    </div>
+                    <div class="activity-widget">
+                        <h1>Recent Activity</h1>
+                        <div class="member">
+                          <div class="member-profile">
+                           <img src="https://randomuser.me/api/portraits/women/64.jpg" alt="Member photo">
+                            <div class="member-info">
+                                <p>Victoria Chambers joined the Forum</p>
+                                <p class="member-activity">4 hours ago</p>
+                            </div>
+                          </div>
+                            <p class="activity-arrow">&#8250;</p>
+                        </div>
+                        <div class="member">
+                          <div class="member-profile">
+                           <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Member photo">
+                            <div class="member-info">
+                                <p>Jerod Wood shared data on Twitter</p>
+                                <p class="member-activity">6 hours ago</p>
+                            </div>
+                          </div>
+                            <p class="activity-arrow">&#8250;</p>
+                        </div>
+                        <div class="member">
+                          <div class="member-profile">
+                           <img src="https://randomuser.me/api/portraits/women/81.jpg" alt="Member photo">
+                            <div class="member-info">
+                                <p>Dawn Wood joined the Forum</p>
+                                <p class="member-activity">1 day ago</p>
+                            </div>
+                          </div>
+                            <p class="activity-arrow">&#8250;</p>
+                        </div>
+                        <div class="member">
+                          <div class="member-profile">
+                           <img src="https://randomuser.me/api/portraits/women/40.jpg" alt="Member photo">
+                            <div class="member-info">
+                                <p>Sally Jones joined the Forum</p>
+                                <p class="member-activity">2 days ago</p>
+                            </div>
+                          </div>
+                            <p class="activity-arrow">&#8250;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="settings" class="settings-container">
+                  <div class="messages-widget">
+                    <h1>Message User</h1>
+                    <form class="message-user" action="index.html" method="post">
+                      <input id="username_select" type="text" placeholder="Username">
+                      <textarea id="username_message" placeholder="Message for User"></textarea>
+                      <div id="user-alert" class="dashboard-alert">
+                          <h2>Please select a user!<span class="close-alert" onclick="this.parentElement.parentElement.style.display='none';">X</span></h2>
+                      </div>
+                      <div id="message-alert" class="dashboard-alert">
+                          <h2>Please add your message!<span class="close-alert" onclick="this.parentElement.parentElement.style.display='none';">X</span></h2>
+                      </div>
+                      <div id="send-message-alert" class="dashboard-alert">
+                          <h2>Message sent!<span class="close-alert" onclick="this.parentElement.parentElement.style.display='none';">X</span></h2>
+                      </div>
+                      <button id="send_message" type="submit">SEND</button>
+                    </form>
+                  </div>
+                  <div class="settings-widget">
+                    <h1>Settings</h1>
+                    <div class="user-settings">
+                        <div class="email-settings">
+                          <label class="switch-light switch-ios" onclick>
+                            <input type="checkbox">
+                            <strong>Send Email Notifications</strong>
+                            <span>
+                              <span>Off</span>
+                              <span>On</span>
+                              <a></a>
+                            </span>
+                          </label>
+                        </div>
+                        <div class="public-profile">
+                          <label class="switch-light switch-ios" onclick>
+                            <input type="checkbox">
+                            <strong>Set Profile to Public</strong>
+                            <span>
+                              <span>Off</span>
+                              <span>On</span>
+                              <a></a>
+                            </span>
+                          </label>
+                        </div>
+                    </div>
+                    <div class="user-timezone">
+                      <select name="timezone">
+                        <option value="" disabled selected>Select Timezone</option>
+                        <option value="eastern">Eastern</option>
+                        <option value="central">Central</option>
+                        <option value="mountain">Mountain</option>
+                        <option value="pacific">Pacific</option>
+                      </select>
+                    </div>
+                    <div class="settings-status">
+                      <button>SAVE</button>
+                      <button>CANCEL</button>
+                    </div>
+                  </div>
+                </div>
+            </main>
+        </div>
+        <!-- dashboard -->
+    </div>
+    <!-- container -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- TOP BAR WITH TITLE, PROFILE ICON WITH NOTIFICATION BELL -->
-  <!-- <div class="header">
-    <ul class="appName">
-      <li><a>YourApp</a></li>
-    </ul>
-    <ul class="profileName">
-      <li><a href="#"><img class="bell-icon" src="icons/icon-bell.svg" alt="bell"></a></li>
-      <li><a href="#"><img class="profile-icon" src="images/member-1.jpg" alt="profilepic"></a></li>
-      <li><a><img src="">Josh Sullivan</a></li>
-    </ul>
-  </div> -->
-<!-- SIDE NAVIGATION -->
-<!-- <div class="nav-container">
-  <ul class="nav-items">
-    <li><a href="#"><img class="icon-svg" src="icons/icon-dashboard.svg" alt="Dashboard"></a></li>
-    <li><a href="#"><img class="icon-svg" src="icons/icon-members.svg" alt="Member"></a></li>
-    <li><a href="#"><img class="icon-svg" src="icons/icon-visits.svg" alt="Visit"></a></li>
-    <li><a href="#"><img class="icon-svg" src="icons/icon-settings.svg" alt="Setting"></a></li>
-  </ul>
-</div>
-
-<main class="dashboard-grid"> -->
-<!-- DASHBOARD AND SEARCHBAR -->
-  <!-- <div class="dashboard-container">
-    <h2 class="main-title">Dashboard</h2>
-    <div class="searchBar">
-      <input />
-    </div>
-  </div>
-
-  <div class="notif-container">
-    <span class= notif-text><p>Alert Nilliam kdjfla dkhui dihfio skj tkejl sidjm alja idjijkl kldjflj.</p></span>
-  </div> -->
-<!-- MAIN TRAFFIC WRAPPER -->
-  <!-- <div class="traffic">
-    <canvas id="myChart" width: "300px" ></canvas>
-  </div> -->
-
-<!-- OTHER GRAPHS WRAPPER -->
-  <!-- <section class="graphs-container">
-    <div class="daily-traffic">
-      <canvas id="myChart" ></canvas>
-    </div>
-    <div class="mobile-users">
-      <canvas id="myChart" ></canvas>
-    </div>
-  </section> -->
-
-
-
-  <!-- SOCIAL STATS WRAPPER-->
-  <!-- <section class="social-container">
-    <div class="social-wrapper">
-
-    </div>
-  </section> -->
-
-  <!-- NEW MEMEBERS AND RECENT ACTIVITIES WRAPPER -->
-<!-- <section>
-  <div class="new-members">
-    <h3>New Members</h3>
-
-    <div class="members-container">
-
-      <div class="member-1">
-      <img src="images/member-1.jpg" alt="member-1">
-        <div class="members-text">
-          <p>Victoria Chambers</p>
-          <a href="#">victoria.chambers80@example.com</a>
-        </div>
-      <p class="date">12/03/19</p>
-      </div>
-
-      <div class="member-2">
-      <img src="images/member-2.jpg" alt="member-2">
-        <div class="members-text">
-          <p>dale Byrd</p>
-          <a href="#">dale.byrd52@example.com</a>
-        </div>
-      <p class="date">12/03/19</p>
-      </div>
-
-      <div class="member-3">
-      <img src="images/member-3.jpg" alt="member-3">
-        <div class="members-text">
-          <p>Dawn Wood</p>
-          <a href="#">dawn.wood16@example.com</a>
-        </div>
-      <p class="date">12/03/19</p>
-      </div>
-
-      <div class="member-4">
-      <img src="images/member-4.jpg" alt="member-4">
-        <div class="members-text">
-          <p>Dan Oliver</p>
-          <a href="#">dan.oliver82@example.com</a>
-        </div>
-      <p class="date">12/03/19</p>
-      </div>
-
-    </div>
-  </div>
-
-    <div class="recent-activities">
-      <h3>Recent Activity</h3>
-
-    <div class="recent-container">
-      <div class="active-1">
-        <img src="images/member-1.jpg" alt="member-1">
-
-        <div class="members-text">
-          <p>Victoria Chambers commented on YourApp's SEO Tips</p>
-          <p>2 hours ago</p>
-        </div>
-        <span>&gt</span>
-      </div>
-
-      <div class="active-2">
-        <img src="images/member-2.jpg" alt="member-2">
-        <div class="members-text">
-          <p>Dale Byrd likes the Facebook Changes for 2019</p>
-          <p>6 hours ago</p>
-        </div>
-        <span>&gt</span>
-      </div>
-
-      <div class="active-3">
-        <img src="images/member-3.jpg" alt="member-3">
-        <div class="members-text">
-          <p>Dawn Wood commented on Facebook Changes for 2019</p>
-          <p>8 hours ago</p>
-        </div>
-        <span>&gt</span>
-      </div>
-
-      <div class="active-4">
-        <img src="images/member-4.jpg" alt="member-4">
-        <div class="members-text">
-          <p>Dan Oliver posted YourApp's SEO Tips</p>
-          <p>1 Day ago</p>
-        </div>
-        <span>&gt</span>
-      </div>
-    </div>
-</section> -->
-
-<!-- MESSAGE AND SETTINGS-->
-<!-- <section>
-  <div class="message-user">
-    <h3>Message User</h3>
-
-    <form class="message-c">
-      <input type="text" placeholder="search for user" class="form-field" id="userField">
-      <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
-      <button class="button-primary" id="send">Send</button>
-    </form>
-  </div>
-
-  <div class="settings">
-    <button class="button-primary" id="save">Save</button>
-    <button class="button-disabled" id="cancel">Cancel</button>
-  </div>
-</section> -->
-
-<!-- </main> -->
